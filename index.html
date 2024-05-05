@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section class="container">
+        <header>Form</header>
+       <form action="#" class="form">
+           
+            <div class="input-box">
+                <label>Book Name</label>
+                <input type="text" placeholder="Enter Book Name" required>
+            </div>
+
+            <div class="input-box">
+                <label>Author Name</label>
+                <input type="text" placeholder="Enter Author Name">
+            </div>
+            <div class="column">
+            <div class="input-box">
+                <label>Publisher</label>
+                <input type="text" placeholder="Enter Publisher Name" required>
+            </div>
+            <div class="input-box">
+                <label>Published Year</label>
+                <input type="number" placeholder="Enter Published Year" min="1980" max="2024" required>
+            </div>
+        </div>
+        
+        <div class="board-box">
+            <h3>Board</h3>
+          <div class="board-option">
+            <div class="board">
+                <input type="radio" id="check-cbse" name="board" />
+                <label for="check-cbse">CBSE</label>
+            </div>
+            <div class="board">
+                <input type="radio" id="check-icse" name="board" />
+                <label for="check-icse">ICSE</label>
+            </div>
+            <div class="board">
+                <input type="radio" id="check-state" name="board" />
+                <label for="check-state">State</label>
+            </div>
+            <div class="board">
+                <input type="radio" id="check-jee" name="board" />
+                <label for="check-jee">JEE/NEET/WBJEE</label>
+            </div>
+            <div class="board">
+                <input type="radio" id="check-others" name="board" />
+                <label for="check-others">Others</label>
+            </div>
+          </div>
+        </div>
+              <div class="select-box">
+                <select>
+                    <option selected="true" disabled="disabled">What's the condition of your book?</option>
+                    <option>As good as new</option>
+                    <option>Used but no markings</option>
+                    <option>Missing a few pages</option>
+                    <option>Torn but has all pages</option>
+                    <option>Torn with few pages missing</option>
+                </select>
+             </div>  
+                
+             <div class="column">
+
+                <div class="price">
+                    <label>Price(in Rs.)</label>
+                    <input type="text" placeholder="Price of your book" required>
+                </div>
+            <div class="free">
+                    <select>
+                        <option selected="true" disabled="disabled">Will you sell your book for free?</option>
+                        <option>Yes</option>
+                        <option>No</option>
+                        
+                    </select>
+                 </div>  
+                </div>
+                <div class="image">
+                    <input type="file" id="upload-btn" accept="image/*">
+                    <label for="upload-btn" ><i class="fa-solid fa-upload"></i> Upload File</label>
+                    </div>
+    
+                
+        </form>
+    </section>
+</body>
+</html>
