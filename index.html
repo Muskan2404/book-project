@@ -8,18 +8,32 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <header id="header">
+       
+        <a href="#" class="logo"><img src="image3.png"></a>
+    <nav>
+        <ul>
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="index.html">Pricing</a></li>
+            <li><a href="#">Support</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <button class='loginbtn'>Login</button> 
+        </ul>
+    </nav>
+    </header>
+    
     <section class="container">
         <header>Form</header>
        <form action="#" class="form">
            
             <div class="input-box">
-                <label>Book Name</label>
+                <label class="necessary">Book Name</label>
                 <input type="text" placeholder="Enter Book Name" required>
             </div>
 
             <div class="input-box">
-                <label>Author Name</label>
-                <input type="text" placeholder="Enter Author Name">
+                <label class="necessary" >Author Name</label>
+                <input type="text" placeholder="Enter Author Name" required>
             </div>
             <div class="column">
             <div class="input-box">
@@ -27,13 +41,13 @@
                 <input type="text" placeholder="Enter Publisher Name" required>
             </div>
             <div class="input-box">
-                <label>Published Year</label>
+                <label class="necessary">Published Year</label>
                 <input type="number" placeholder="Enter Published Year" min="1980" max="2024" required>
             </div>
         </div>
         
         <div class="board-box">
-            <h3>Board</h3>
+            <h3 class="necessary">Board</h3>
           <div class="board-option">
             <div class="board">
                 <input type="radio" id="check-cbse" name="board" />
@@ -70,11 +84,7 @@
                 
              <div class="column">
 
-                <div class="price">
-                    <label>Price(in Rs.)</label>
-                    <input type="text" placeholder="Price of your book" required>
-                </div>
-            <div class="free">
+                <div class="free">
                     <select>
                         <option selected="true" disabled="disabled">Will you sell your book for free?</option>
                         <option>Yes</option>
@@ -82,14 +92,25 @@
                         
                     </select>
                  </div>  
+
+                <div class="price">
+                    <label class="necessary" >Price(in Rs.)</label>
+                    <input type="text" placeholder="Price of your book" required>
+                </div>
+            
                 </div>
                 <div class="image">
-                    <input type="file" id="upload-btn" accept="image/*">
-                    <label for="upload-btn" ><i class="fa-solid fa-upload"></i> Upload File</label>
+                    <input type="file" id="upload-btn" accept="image/*" multiple>
+                    <label for="upload-btn" class="necessary"><i class="fa-solid fa-upload"></i>Upload Image of your book</label>
+                    <div id="num-of-files">No files chosen</div>
+                    <ul id="files-list"></ul>
                     </div>
-    
-                
+                  
+                    <button type="submit" class="btn">Submit</button>
+
         </form>
     </section>
+    <!--Script-->
+    <script src="script.js"></script>
 </body>
 </html>
